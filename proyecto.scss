@@ -1,0 +1,134 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Estructura */
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Raleway';
+    padding: 0;
+    margin: 0;
+    background-color: beige;
+}
+
+/* Header*/ /* Menu */
+// Header no me toma todos los parámetros del scss, estimo que porque bootstrap está siendo mas específico en algunas cosas.
+
+header {
+
+    position: sticky;
+    top: 0;
+    z-index: 1071;
+    nav {
+       padding: 0;
+       display: flex;
+       justify-content: flex-end;
+       flex-direction: row; 
+       align-items: center;
+       flex-wrap: wrap;
+        div {
+            ul {
+                li { 
+                    a {
+                        text-decoration: none;
+                        margin-right: 10px; 
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        
+                    } 
+                }
+            }          
+        }        
+    }    
+}
+
+
+
+/* Secciones */
+
+
+.titulo {
+    font-family: 'Oswald', sans-serif; 
+    text-align: center;
+    color: #779e39; 
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+.box {
+    background-color: #faa16e;
+    border-radius: 2px;
+    padding: 18px;
+    color: rgb(29, 23, 23);
+    height: 55px;
+    overflow: hidden;
+    transition: 280ms ease;
+    margin-top: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.3);
+    &:hover {    
+        height: 150px;
+        background-color: darken($color: #faa16e, $amount: 10%);
+
+    }
+}
+
+
+.rotate-vert-center {
+	-webkit-animation: rotate-vert-center 0.4s cubic-bezier(0.190, 1.000, 0.220, 1.000) both;
+	        animation: rotate-vert-center 0.4s cubic-bezier(0.190, 1.000, 0.220, 1.000) both;
+}
+
+@-webkit-keyframes rotate-vert-center {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  @keyframes rotate-vert-center {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+}

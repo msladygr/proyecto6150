@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contactános</title>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+
+	<main>
+
+	   <header>
+		   <main class="main">
+		       <h3>High Definition</h3>
+		       <nav class="menu">
+				  <a href="index.html">Home</a>
+				  <a href="servicios.html">Servicios</a>
+				  <a href="portfolio.html">Portfolio</a>
+				  <a href="clientes.html">Clientes</a>
+				  <a href="contacto.html">Contáctanos</a>   
+		       </nav>   
+		   </main> 
+       </header>
+  
+
+	    <section class="grid-padre">
+
+			<section id="datos" class="item">
+				<h3>Un medio para tus ideas</h3>
+				<h1>Dejanos tus datos y contanos que estás pensado!</h1>	
+			</section>
+		  
+		  
+	  
+		   <section id="formulario" class="item">
+			   <form action="#" method="GET" class="form">
+				   <div>
+					   <label for="nombre">Nombre</label>
+					   <input id="nombre" type="text" name="Nombre" placeholder="Pedro" required>
+				   </div>
+			  
+					<div>
+						<label for="apellido">Apellido</label>
+						<input id="apellido" type="text" name="Apellido" placeholder="Rodriguez">
+					</div>
+			   
+					<div>
+						<label>Estado Civil</label>
+						<input id="soltero/a" name="estado_civil" type="radio" value="Soltero/a">
+						<label for="soltero/a">Soltero/a</label>	     	
+						<input id="casado/a" name="estado_civil" type="radio" value="Casado/a">
+					    <label for="casado/a">Casado/a</label>	     	
+						<input id="divorciado/a" name="estado_civil" type="radio" value="Divorciado/a">
+						<label for="divorciado/a">Divorciado/a</label>   	
+						<input id="concubinato" name="estado_civil" type="radio" value="Concubinato">
+						<label for="concubinato">Concubinato</label>
+						<input id="otros" name="estado_civil" type="radio" value="Otros">
+						<label for="otros">Otros</label>
+					</div>
+			   
+					<div>
+						<label for="email">Email</label>
+						<input id="email" type="email" name="Email" placeholder="ejemplo@email.com" required>
+					</div>
+			   
+					<div>
+						<label for="telefono">Teléfono</label>
+						<input id="telefono" type="number" name="Teléfono" placeholder="1234567890"> <!-- también encontré un type=tel existe? dado que lo use, pero no se si valida que sea número. -->
+					</div>
+			   
+					<div>
+						<label for="servicio">Contános que te interesa!</label>
+						<select name="Servicio" id="servicio" required>
+							  <option selected disabled>Seleccione una opción</option>
+							  <option  value="Producto">Producto</option>
+							  <option  value="Corporativo">Corporativo</option>
+							  <option  value="Creativos">Creativos</option>
+							  <option  value="Eventos">Eventos</option>
+							  <option  value="Personal">Personal</option>
+							  <option  value="Moda">Moda</option>
+							  <option  value="Otros">Otros</option>
+						</select>
+					</div>		
+					<div>
+					    <label for="comentarios">Dejanos un comentario</label>
+						<textarea name="Comentarios" id="comentarios" placeholder="Acá van tus comentarios"></textarea>
+					</div>
+			   
+				   <div>
+					   <label for="novedades">Quiero recibir novedades</label>
+					   <input id="novedades" name="Newslletter" value="SI" type="checkbox" checked>
+				   </div>	     	
+				   <div>
+						<label for="legales">Acepto Términos y Condiciones</label>
+						<input id="legales" name="Acepta" value="SI" type="checkbox" required>
+				   </div>
+				   <div class="botones">
+				       <button type="submit" class="go vibrate-1">Vamos allá!</button>
+				       <button type="reset" class="reset">Reset</button>
+				   </div>
+			  </form>
+		   </section>
+
+
+		   <section id="catalogo"  class="catalogo-flex">
+			   <div class="roll-in-blurred-left">
+				   <h4>Catalogo 1</h4>
+			   </div>
+			   <div class="roll-in-blurred-left">
+				   <h4>Catalogo 2</h4>
+			   </div>
+			   <div class="roll-in-blurred-left">
+				  <h4>Catalogo 3</h4>
+			   </div>
+		   </section>
+		 
+	  		
+		   <footer class="footer item">
+	  			<div> Copyright 2020 + Legales
+				   <a href="#">Pinterest</a>
+				   <a href="#">Email</a>
+				   <a href="#">Instagram</a>
+				   <a href="#">RRSS</a>
+				   <a href="#">YouTube</a>
+			   </div>
+		 
+				<div>
+					Horarios de atención: Lunes a Viernes de 10:00 a 17:30 hs.
+					Oficinas: CABA - Calle Inventada 1234
+					Teléfono: (+54) 9 1145001500 / (+54) 44870000 (ejemplo)
+				</div> 
+		  </footer>	 
+       </section>
+
+	</main>
+
+</body>
+</html>

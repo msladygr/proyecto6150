@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Estructura */
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Raleway';
+    padding: 0;
+    margin: 0;
+    background-color: beige;
+}
+
+/* Header*/
+
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: rgb(46, 43, 46);
+    z-index: 1;
+}
+
+/* Menu */
+
+header h3 {color: #ffffff; 
+    text-transform: initial;
+    font-style: oblique;
+    font-size: 1.5rem;
+    margin: 0;
+    position: relative; 
+    top: 34px; 
+    left: 50px;
+}
+
+/* Tuve que usar position relative para el hr 
+porque no pude acomodarlo bien usando flex.. 
+No entiendo como poder cambiar la ubicacion
+con esa propiedad a mi gusto. */
+
+main.main {
+    height: 100%;
+}
+
+.menu {
+    padding: 0;
+    margin: 32px 15px 0px 0px; 
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 28px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Secciones */
+
+
+/* Seccion 1 Index */
+
+h1 {
+    font-family: 'Oswald', sans-serif; 
+    font-size: 4rem; 
+    color: black; 
+    text-align: right;
+    margin-right: 30px;
+}
+
+.video-fondo {
+    min-width: 100%; 
+    min-height: 100%; 
+    height: auto; 
+    width: auto;
+    z-index: 10000;
+}
+
+/* Seccion 2 Index */
+
+.servicios-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.servicios {
+    font-family: 'Oswald', sans-serif; 
+    text-align: center;
+    color: #ca254e; 
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+.flex-hijo {
+    padding: 10px;
+}
+
+.flex-hijo h3 {
+    color: #e9b149; 
+    text-transform: initial;
+    font-style: oblique;
+    font-size: 1.2rem;
+    
+}
+
+/* Seccion 3 Index */
+
+.section-tres {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    width: 100%;
+    height: 450px;
+    background-image: url(galeria/portfolio2.jpeg);  
+}
+
+.section-tres div {
+    color: white;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 1.6rem;
+    text-align: center;
+    
+}
+
+
+/* Footer */
+
+footer { 
+background-color: rgb(46, 43, 46); 
+width: 100%;
+height: 90px;
+max-height: 140px;
+bottom: 0vh;
+display: flex;
+}
+
+footer div {
+    color: #ffffff; 
+    padding: 10px;
+    font-size: 0.8rem;
+
+}
+
+
